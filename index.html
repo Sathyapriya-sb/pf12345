@@ -103,26 +103,17 @@
             margin-bottom: 12px;
         }
 
-        .bank-dbs { background: #ef4444; }
-        .bank-dbs-fresh { background: #d71e1e; }
-        .bank-dbs-posb { background: #9e1919; }
-        .bank-citi-smrt { background: #0ed0e9; }
-        .bank-uob-abscash { background: #2d6cf2; }
-        .bank-uob-bt { background: #1e2ab5; }
-        .bank-stanchart-scash { background: #26b059; }
-        .bank-stanchart-smart { background: #15803d; }
-        .bank-maybank-ff { background: #eab308; }
-        .bank-maybank-bt { background: #c78d1a; }
-        .bank-ocbc-inf { background: #f97316; }
-        
-        /* .bank-dbs { background: #dc2626; }
-        .bank-posb { background: #b91c1c; }
-        .bank-ocbc { background: #f97316; }
-        .bank-uob { background: #2563eb; }
-        .bank-citi { background: #3b82f6; }
-        .bank-stanchart { background: #16a34a; }
-        .bank-stanchart2 { background: #15803d; }
-        .bank-maybank { background: #ca8a04; } */
+        .bank-dbs-bank { background: #ef4444; }
+        .bank-dbs-cc1 { background: #d71e1e; }
+        .bank-dbs-cc2 { background: #9e1919; }
+        .bank-citi-cc1 { background: #0ed0e9; }
+        .bank-uob-bank { background: #2d6cf2; }
+        .bank-uob-cc2 { background: #1e2ab5; }
+        .bank-stanchart-cc1 { background: #26b059; }
+        .bank-stanchart-cc2 { background: #15803d; }
+        .bank-maybank-cc1 { background: #eab308; }
+        .bank-maybank-cca { background: #c78d1a; }
+        .bank-ocbc-cc1 { background: #f97316; }
 
         .card-name {
             font-weight: 700;
@@ -467,17 +458,17 @@
 
     <script>
         const cards = [
-            { name: 'DBS Bank Account', bank: 'DBS', statementDate: 'NA', dueDate: 'NA', colorClass: 'bank-dbs' },
-            { name: 'DBS Live Fresh', bank: 'DBS', statementDate: 14, dueDate: 8, colorClass: 'bank-dbs-fresh' },
-            { name: 'POSB Everyday Card', bank: 'POSB', statementDate: 14, dueDate: 8, colorClass: 'bank-dbs-posb' },
-            { name: 'Citi SMRT Card', bank: 'Citibank', statementDate: 5, dueDate: 30, colorClass: 'bank-citi-smrt' },
-            { name: 'UOB Absolute Cashback', bank: 'UOB', statementDate: 6, dueDate: 25, colorClass: 'bank-uob-abscash' },
-            { name: 'UOB Balance Transfer', bank: 'UOB', statementDate: 6, dueDate: 25, colorClass: 'bank-uob-bt' },
-            { name: 'StanChart Simply Cash', bank: 'Standard Chartered', statementDate: 16, dueDate: 7, colorClass: 'bank-stanchart-scash' },
-            { name: 'StanChart Smart', bank: 'Standard Chartered', statementDate: 16, dueDate: 7, colorClass: 'bank-stanchart-smart' },
-            { name: 'Maybank Family & Friends', bank: 'Maybank', statementDate: 22, dueDate: 11, colorClass: 'bank-maybank-ff' },
-            { name: 'Maybank Balance Transfer', bank: 'Maybank', statementDate: 22, dueDate: 11, colorClass: 'bank-maybank-bt' },
-            { name: 'OCBC INFINITY Cashback', bank: 'OCBC', statementDate: 'NA', dueDate: 'NA', colorClass: 'bank-ocbc-inf' }
+            { name: 'DBS Savings Account', bank: 'DBS', statementDate: 'NA', dueDate: 'NA', colorClass: 'bank-dbs-bank' },
+            { name: 'DBS card name', bank: 'DBS', statementDate: 14, dueDate: 8, colorClass: 'bank-dbs-cc1' },
+            { name: 'POSB card name', bank: 'POSB', statementDate: 14, dueDate: 8, colorClass: 'bank-dbs-cc2' },
+            { name: 'Citi card name', bank: 'Citibank', statementDate: 5, dueDate: 30, colorClass: 'bank-citi-cc1' },
+            { name: 'UOB Current account', bank: 'UOB', statementDate: 6, dueDate: 25, colorClass: 'bank-uob-bank' },
+            { name: 'UOB card name', bank: 'UOB', statementDate: 6, dueDate: 25, colorClass: 'bank-uob-cc1' },
+            { name: 'StanChart card name', bank: 'Standard Chartered', statementDate: 16, dueDate: 7, colorClass: 'bank-stanchart-cc1' },
+            { name: 'StanChart card name', bank: 'Standard Chartered', statementDate: 16, dueDate: 7, colorClass: 'bank-stanchart-cc2' },
+            { name: 'Maybank card name', bank: 'Maybank', statementDate: 22, dueDate: 11, colorClass: 'bank-maybank-cc1' },
+            { name: 'Maybank', bank: 'Maybank CreditAble', statementDate: 22, dueDate: 11, colorClass: 'bank-maybank-cca' },
+            { name: 'OCBC card name', bank: 'OCBC', statementDate: 'NA', dueDate: 'NA', colorClass: 'bank-ocbc-cc1' }
         ];
 
         let transactions = JSON.parse(localStorage.getItem('transactions') || '[]');   // <== ADDED
